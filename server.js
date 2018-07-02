@@ -5,7 +5,6 @@ var config = require('./config');
 var app = express();
 var googleProfile = {};
 
-
 passport.serializeUser(function(user, done) {
     done(null, user);
 });

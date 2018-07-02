@@ -3,4 +3,8 @@ html
     head
         title="Login Page"
     body
-        div Jestem zalogowany
+        if(user)
+            h1 Hi, #{user.displayName}
+        else
+            p Musisz być zalogowany
+            a(href="/index") Sign Up
